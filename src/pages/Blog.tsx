@@ -3,6 +3,10 @@ import styled from 'styled-components'
 import BlogCard from '../components/reUse/BlogCard'
 // import img9 from "../assets/pic8.jpeg" 
 
+import img from "../assets/bg.jpeg"
+import img2 from "../assets/bg1.jpeg"
+import img3 from "../assets/bg3.jpeg"
+import img1 from "../assets/downimg.jpeg"
 
 const Blog= () => {
   return (
@@ -19,9 +23,9 @@ with thoughtful designs and quality materials.
                 </Sub>
                 </Word>
              <CardHolder>
-                <BlogCard/>
-                <BlogCard/>
-                <BlogCard/>
+                <BlogCard bcimage={img} h2=' Why April Babies Are Extra Special' img={img1} name='Valerian Pedro' date='06 June 2023'/>
+                <BlogCard bcimage={img2} h2=' Why April Babies Are Extra Special' img={img1} name='Valerian Pedro' date='06 June 2023'/>
+                <BlogCard bcimage={img3} h2=' Why April Babies Are Extra Special' img={img1} name='Valerian Pedro' date='06 June 2023'/>
              </CardHolder>
             </Wrapper>
         </Container>

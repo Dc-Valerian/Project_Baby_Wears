@@ -1,32 +1,40 @@
 import React from 'react'
 import styled from 'styled-components'
-import img from "../../assets/bg.jpeg"
-import img1 from "../../assets/downimg.jpeg"
 import {AiFillClockCircle} from "react-icons/ai"
 
-const BlogCard = () => {
+interface iBlog {
+  bcimage:string;
+  h2:string;
+  img:string;
+  name:string;
+  date:string;
+}
+
+const BlogCard:React.FC<iBlog> = ({
+  bcimage,h2,img,name,date
+}) => {
   return (
     <div>
         <Container>
-            <Image>
+            <Image bcimage={bcimage}>
                 <Line>
                 </Line>
             </Image>
             <Text>
                 <Title>
                    <h2>
-                   Why April Babies Are Extra Special
+                  {h2}
                    </h2>
                    <Down>
-                    <Img src={img1}/> 
+                    <Img src={img}/> 
                     <Name>
-                      Valerian Adimike
+                      {name}
                     </Name>
                     <Icon>
                       <AiFillClockCircle/>
                     </Icon>
                     <Name>
-                      June 6,2018
+                      {date}
                     </Name>
                    </Down>
                 </Title>
@@ -103,14 +111,14 @@ height: 95%;
 border: 2px dotted white;
 `
 
-const Image = styled.div`
+const Image = styled.div<{bcimage:string}>`
 /* background-color: brown; */
 height: 380px;
 width: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
-background-image: url(${img});
+background-image: url(${(props)=>props.bcimage});
 background-repeat: no-repeat;
 background-size: cover;
 `
