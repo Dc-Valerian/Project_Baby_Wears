@@ -36,10 +36,11 @@ padding-left: 10px;
 h1{
     color: rgb(255,255,255);
     font-size: 60px;
-    line-height: 97.5px;
+    line-height: 55.5px;
     font-weight: 400;
     text-decoration: none solid rgb(255,255,255);
     text-align: left;
+font-family: Hensa-Regular;
 }
 
 h3{
