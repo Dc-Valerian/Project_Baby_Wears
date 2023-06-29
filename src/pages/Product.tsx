@@ -5,6 +5,11 @@ import img from "../assets/fish.jpeg"
 import img2 from "../assets/pic.jpeg"
 import img3 from "../assets/pic2.jpeg"
 import img4 from "../assets/pic3.jpeg"
+import img5 from "../assets/pic4.jpeg"
+import img6 from "../assets/pic5.jpeg"
+import img7 from "../assets/pic6.jpeg"
+import img8 from "../assets/pic7.jpeg"
+// import img9 from "../assets/pic8.jpeg"
 import GlobalButton from '../components/reUse/GlobalButton'
 
 const Product = () => {
@@ -21,14 +26,14 @@ const Product = () => {
                 </Sub>
                 </Word>
                 <CardHolder>
-                   <ProductCard image={img4} div='$39.99' dn='none' title='Stuffed Blue Shark'/>
-                    <ProductCard image={img2} div='$39.99' dn='none' title="Denim JumpSuit"/>
+                   <ProductCard image={img} div='$39.99' dn='none' title='Stuffed Blue Shark'/>
+                    <ProductCard image={img2} div='$39.99' dn='' title="Denim JumpSuit"/>
                     <ProductCard image={img3} div='$39.99' dn='' title='Stuffed Blue Shark'/>
-                    <ProductCard image={img} div='$39.99' dn='' title='Stuffed Blue Shark'/>
-                   <ProductCard image={img4} div='$39.99' dn='none' title='Stuffed Blue Shark'/>
                     <ProductCard image={img4} div='$39.99' dn='none' title='Stuffed Blue Shark'/>
-                   <ProductCard image={img4} div='$39.99' dn='none' title='Stuffed Blue Shark'/>
-                    <ProductCard image={img4} div='$39.99' dn='none' title='Super Star Knit Hat'/>
+                   <ProductCard image={img5} div='$39.99' dn='' title='Stuffed Blue Shark'/>
+                    <ProductCard image={img6} div='$39.99' dn='none' title='Stuffed Blue Shark'/>
+                   <ProductCard image={img7} div='$39.99' dn='' title='Stuffed Blue Shark'/>
+                    <ProductCard image={img8} div='$39.99' dn='none' title='Super Star Knit Hat'/>
                 </CardHolder>
                 <GlobalButton width='150px' title='Shop All Products' bcc='#57C1DB' hvbcc='' subwidth='140px'/>
             </Wrapper>
@@ -44,6 +49,7 @@ flex-wrap: wrap;
 display: flex;
 align-items: center;
 justify-content: center;
+margin-bottom: 30px;
 `
 
 const Sub = styled.div`

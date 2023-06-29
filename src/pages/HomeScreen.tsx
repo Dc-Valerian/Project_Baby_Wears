@@ -1,4 +1,5 @@
 
+import Collections from './Collections'
 import Hero from './Hero'
 import MidCards from './MidCards'
 import Product from './Product'
@@ -9,6 +10,7 @@ const HomeScreen = () => {
         <Hero/>
         <MidCards/>
         <Product/>
+        <Collections/>
     </div>
   )
 }
