@@ -1,23 +1,25 @@
 import styled from "styled-components"
-import img from "../../assets/girls.jpeg"
 
 interface iCard{
     title:string;
     sub:string;
     last:string;
-    bcc:string;
     image:string;
 }
 
-const GlobalCard:React.FC<iCard> = ({title,sub,last,bcc,image}) => {
+const GlobalCard:React.FC<iCard> = ({title,sub,last,image}) => {
   return (
     <div>
-        <Container>
+        <Container image={image}>
             <Wrapper>
                 <Text>
-                        <h1>Girls</h1>
-                        <h3>clothing</h3>
-                        <h5>World's Best Brands</h5>
+                        <h1>{title}</h1>
+                        <h3>
+                            {sub}
+                        </h3>
+                        <h5>
+                            {last}
+                        </h5>
                 </Text>
             </Wrapper>
         </Container>
@@ -70,7 +72,7 @@ border: 2px dotted white;
 border-radius: 10px;
 `
 
-const Container = styled.div`
+const Container = styled.div<{image:string;}>`
 padding: 10px;
 /* background-color: brown; */
 width: 350px;
@@ -79,7 +81,7 @@ margin: 5px;
 display: flex;
 align-items: center;
 border-radius: 10px;
-background-image: url(${img});
+background-image: url(${(props)=>props.image});
 background-repeat: no-repeat;
 background-size: cover;
 /* justify-content: center; */
