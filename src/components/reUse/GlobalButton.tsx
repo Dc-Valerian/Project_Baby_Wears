@@ -5,15 +5,16 @@ interface iButton {
     bcc:string;
     hvbcc:string;
     width:string;
+    subwidth:string
 }
 
 const GlobalButton:React.FC<iButton> = ({
-    title,bcc,hvbcc,width
+    title,bcc,hvbcc,width,subwidth
 }) => {
   return (
     <div>
         <Container width={width} bcc={bcc} hvbcc={hvbcc}>
-            <Wrapper>
+            <Wrapper subwidth={subwidth}>
                {title}
             </Wrapper>
         </Container>
@@ -23,10 +24,10 @@ const GlobalButton:React.FC<iButton> = ({
 
 export default GlobalButton
 
-const Wrapper = styled.div`
+const Wrapper = styled.div<{subwidth:string}>`
 border: 3px dotted;
 color: white;
-width:110px;
+width:${(props)=>props.subwidth};
 height: 35px;
 border-radius: 20px;
 display: flex;

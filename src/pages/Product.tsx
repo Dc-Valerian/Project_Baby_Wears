@@ -1,5 +1,11 @@
 
 import styled from 'styled-components'
+import ProductCard from '../components/reUse/ProductCard'
+import img from "../assets/fish.jpeg"
+import img2 from "../assets/pic.jpeg"
+import img3 from "../assets/pic2.jpeg"
+import img4 from "../assets/pic3.jpeg"
+import GlobalButton from '../components/reUse/GlobalButton'
 
 const Product = () => {
   return (
@@ -14,6 +20,17 @@ const Product = () => {
                 We've picked few pieces we're pretty sure you'll love. <br /> Check back often and enjoy
                 </Sub>
                 </Word>
+                <CardHolder>
+                   <ProductCard image={img4} div='$39.99' dn='none' title='Stuffed Blue Shark'/>
+                    <ProductCard image={img2} div='$39.99' dn='none' title="Denim JumpSuit"/>
+                    <ProductCard image={img3} div='$39.99' dn='' title='Stuffed Blue Shark'/>
+                    <ProductCard image={img} div='$39.99' dn='' title='Stuffed Blue Shark'/>
+                   <ProductCard image={img4} div='$39.99' dn='none' title='Stuffed Blue Shark'/>
+                    <ProductCard image={img4} div='$39.99' dn='none' title='Stuffed Blue Shark'/>
+                   <ProductCard image={img4} div='$39.99' dn='none' title='Stuffed Blue Shark'/>
+                    <ProductCard image={img4} div='$39.99' dn='none' title='Super Star Knit Hat'/>
+                </CardHolder>
+                <GlobalButton width='150px' title='Shop All Products' bcc='#57C1DB' hvbcc='' subwidth='140px'/>
             </Wrapper>
         </Container>
     </div>
@@ -21,6 +38,13 @@ const Product = () => {
 }
 
 export default Product
+const CardHolder = styled.div`
+display: flex;
+flex-wrap: wrap;
+display: flex;
+align-items: center;
+justify-content: center;
+`
 
 const Sub = styled.div`
 display: flex;
@@ -57,18 +81,21 @@ flex-direction: column;
 `
 
 const Wrapper = styled.div`
-background-color: paleturquoise;
+/* background-color: paleturquoise; */
 display: flex;
 align-items: center;
 justify-content: center;
-width: 90%;
+width: 98%;
+flex-direction: column;
+padding-bottom: 10px;
 `
 
 const Container = styled.div`
 display: flex;
-background-color: yellowgreen;
+/* background-color: yellowgreen; */
 align-items: center;
 justify-content: center;
 width: 100%;
 margin-top: 60px;
+flex-direction: column;
 `
