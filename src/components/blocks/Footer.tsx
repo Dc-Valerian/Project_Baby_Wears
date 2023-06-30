@@ -165,6 +165,7 @@ const Logo = styled.img`
 height: 100%;
 width: 100%;
 object-fit: contain;
+cursor: pointer;
 `
 
 const Image = styled.div`
