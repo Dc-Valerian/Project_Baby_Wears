@@ -23,9 +23,9 @@ with thoughtful designs and quality materials.
                 </Sub>
                 </Word>
              <CardHolder>
-                <BlogCard bcimage={img} h2=' Why April Babies Are Extra Special' img={img1} name='Valerian Pedro' date='06 June 2023'/>
-                <BlogCard bcimage={img2} h2=' Why April Babies Are Extra Special' img={img1} name='Valerian Pedro' date='06 June 2023'/>
-                <BlogCard bcimage={img3} h2=' Why April Babies Are Extra Special' img={img1} name='Valerian Pedro' date='06 June 2023'/>
+                <BlogCard bcimage={img} h2=' Why April Babies Are Extra Special' img={img1} name='Valerian Pedro' />
+                <BlogCard bcimage={img2} h2=' Why April Babies Are Extra Special' img={img1} name='Valerian Pedro' />
+                <BlogCard bcimage={img3} h2=' Why April Babies Are Extra Special' img={img1} name='Valerian Pedro' />
              </CardHolder>
             </Wrapper>
         </Container>

@@ -49,9 +49,14 @@ display: flex;
 align-items: center;
 justify-content: center;
 margin: 5px;
+transition: all 350ms;
 
 :hover{
     cursor: pointer;
     background-color: ${(props)=>props.hvbcc};
+    transform: translate(0,-5px);
 }
 `
+
+
+ 

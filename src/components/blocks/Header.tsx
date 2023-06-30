@@ -6,7 +6,7 @@ import img from "../../assets/logo1.png"
 
 const Header = () => {
   return (
-    <div>
+    <div id="hero">
         <Container>
             <Main>
               <Logo>
@@ -94,10 +94,12 @@ font-size: 16px;
 line-height: 80px;
 font-weight: 700;
 text-align: left;
+transition: all 350ms;
 
 :hover{
   color: rgb(255,128,135);
   cursor: pointer;
+  transform: translate(0,-5px);
 }
 `
 

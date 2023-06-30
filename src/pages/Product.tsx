@@ -35,7 +35,7 @@ const Product = () => {
                    <ProductCard image={img7} div='$39.99' dn='' title='Stuffed Blue Shark'/>
                     <ProductCard image={img8} div='$39.99' dn='none' title='Super Star Knit Hat'/>
                 </CardHolder>
-                <GlobalButton width='150px' title='Shop All Products' bcc='#57C1DB' hvbcc='' subwidth='140px'/>
+                <GlobalButton width='150px' title='Shop All Products' bcc='#57C1DB' hvbcc='#F59495' subwidth='140px'/>
             </Wrapper>
         </Container>
     </div>

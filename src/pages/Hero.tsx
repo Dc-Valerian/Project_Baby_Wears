@@ -16,7 +16,7 @@ const Hero = () => {
           </Sub>
           <ButtonHold>
            <GlobalButton width="120px" title="Shop Girls" bcc="#F69697" hvbcc="#82CAE1" subwidth="110px"/>
-           <GlobalButton width="120px" title="Shop Boys" bcc="#82CAE1" hvbcc="" subwidth="110px"/>
+           <GlobalButton width="120px" title="Shop Boys" bcc="#82CAE1" hvbcc="#F59495" subwidth="110px"/>
           </ButtonHold>
         </Wrapper>
         {/* <Wave>

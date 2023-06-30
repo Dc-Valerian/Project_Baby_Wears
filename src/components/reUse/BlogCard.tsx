@@ -1,17 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
 import {AiFillClockCircle} from "react-icons/ai"
+import moment from 'moment'
 
 interface iBlog {
   bcimage:string;
   h2:string;
   img:string;
   name:string;
-  date:string;
 }
 
 const BlogCard:React.FC<iBlog> = ({
-  bcimage,h2,img,name,date
+  bcimage,h2,img,name
 }) => {
   return (
     <div>
@@ -34,7 +34,7 @@ const BlogCard:React.FC<iBlog> = ({
                       <AiFillClockCircle/>
                     </Icon>
                     <Name>
-                      {date}
+                    {moment(Date.now()).format('dddd')}, {moment(Date.now()).format("MMMM Do YYYY")}
                     </Name>
                    </Down>
                 </Title>
