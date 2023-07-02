@@ -68,6 +68,7 @@ border-radius: 50%;
 width: 28px;
 height: 28px;
 margin-left: 5px;
+object-fit: cover;
 `
 
 const Down = styled.div`
@@ -83,10 +84,10 @@ const Title = styled.div`
 h2{
   display: flex;
   align-items: flex-start;
-  width: 90%;
+  width: 100%;
 /* background-color: blue; */
 color: rgb(84,84,84);
-font-size: 34px;
+font-size: 33px;
 line-height: 38px;
 font-weight: 700;
 text-decoration: none solid rgb(84,84,84);

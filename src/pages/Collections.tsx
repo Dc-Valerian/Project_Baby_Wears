@@ -18,7 +18,7 @@ const Collections = () => {
 with thoughtful designs, quality materials and construction, <br />
 and convenient shopping options.
                         </p>
-                    <GlobalButton title="Shop Collection" bcc="#FF8087" hvbcc="#80C9E0" width="130px" subwidth="120px"/>
+                    <GlobalButton title="Shop Collection" bcc="#FF8087" hvbcc="#80C9E0" width="130px" subwidth="120px" hvcl="#FF8087"/>
                     </Title>
                 </First>
                 <Second>
@@ -103,4 +103,5 @@ display: flex;
 align-items: center;
 justify-content: center;
 margin-top: 40px;
+flex-wrap: wrap;
 `

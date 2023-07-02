@@ -1,15 +1,20 @@
 
+import { BsFillBagCheckFill } from 'react-icons/bs';
+import { FaRegNewspaper } from 'react-icons/fa6';
 import styled from 'styled-components'
+
+import img2 from "../../assets/pic3.jpeg"
 
 interface iProductCard{
     dn:string;
     title:string;
     div:string;
     image:string;
+    hoverImage:string;
 }
 
 const ProductCard:React.FC<iProductCard> = ({
-    dn,title,div,image
+    dn,title,div,image,hoverImage
 }) => {
   return (
     <div>
@@ -33,12 +38,86 @@ const ProductCard:React.FC<iProductCard> = ({
                     </h4>
                 </Text>
             </Wrapper>
+            <HoverCard>
+                <Image1 hoverImage={hoverImage}>
+                   {/* <Pic1 src={img2}/> */}
+                <Down>
+                    <Icon>
+                        <BsFillBagCheckFill/>
+                    </Icon>
+                    <Icon>
+                        <FaRegNewspaper/>
+                    </Icon>
+                    <Icon>
+                        <BsFillBagCheckFill/>
+                    </Icon>
+                </Down>
+                </Image1>
+            </HoverCard> 
+
+
         </Container>
     </div>
   )
 }
 
 export default ProductCard
+const Icon = styled.div`
+margin:10px;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+background-color: blanchedalmond;
+display: flex;
+align-items: center;
+font-size: 22px;
+justify-content: center;
+cursor: pointer;
+`
+
+const Down = styled.div`
+/* background-color: blue; */
+width: 100%;
+/* height: 50px; */
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+`
+
+// const Pic1 = styled.img`
+// height: 100%;
+// width: 100%;
+// object-fit: cover;
+// `
+
+const Image1 = styled.div<{hoverImage:string}>`
+width: 100%;
+height:320px;
+/* position: relative; */
+background-image: url(${(props)=>props.hoverImage});
+background-position: center;
+background-size: cover;
+display: flex;
+align-items: end;
+/* justify-content: end; */
+
+`
+
+const HoverCard = styled.div`
+/* background-color: red; */
+/* background: rgb(249,249,249);
+background: linear-gradient(0deg, #050505 0%,  rgba(0,0,0,0) 100%); */
+height: 320px;
+/* height: 100%; */
+width: 90%;
+/* margin-left: 30px; */
+display: none;
+position: absolute;
+margin-bottom: 60px;
+cursor: pointer;
+`
+
 const Text = styled.div`
 h2{
     color: rgb(51,51,51);
@@ -98,6 +177,7 @@ position: absolute;
 top: 0;
 left:6%;
 display: ${(props)=>props.dn};
+z-index: 99999;
 `
 
 const Wrapper = styled.div`
@@ -115,4 +195,14 @@ align-items: center;
 justify-content: center;
 position: relative;
 margin-top: 30px;
+margin: 4px;
+
+
+:hover ${HoverCard}{
+    display: flex;
+}
+
+/* :hover ${Image}{
+    display: none;
+}  */
 `

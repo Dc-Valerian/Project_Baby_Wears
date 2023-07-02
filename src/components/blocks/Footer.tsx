@@ -166,11 +166,12 @@ height: 100%;
 width: 100%;
 object-fit: contain;
 cursor: pointer;
+/* background-color: red; */
 `
 
 const Image = styled.div`
 /* background-color: blanchedalmond; */
-width: 70%;
+width: 20%;
 height: 200px;
 `
 

@@ -7,6 +7,8 @@ import img from "../assets/bg.jpeg"
 import img2 from "../assets/bg1.jpeg"
 import img3 from "../assets/bg3.jpeg"
 import img1 from "../assets/downimg.jpeg"
+import img5 from "../assets/me.jpg"
+import img6 from "../assets/hmm.jpg"
 
 const Blog= () => {
   return (
@@ -24,8 +26,8 @@ with thoughtful designs and quality materials.
                 </Word>
              <CardHolder>
                 <BlogCard bcimage={img} h2=' Why April Babies Are Extra Special' img={img1} name='Valerian Pedro' />
-                <BlogCard bcimage={img2} h2=' Why April Babies Are Extra Special' img={img1} name='Valerian Pedro' />
-                <BlogCard bcimage={img3} h2=' Why April Babies Are Extra Special' img={img1} name='Valerian Pedro' />
+                <BlogCard bcimage={img2} h2='The Surpising Way Motherhood changed me' img={img5} name='Divine Peace' />
+                <BlogCard bcimage={img3} h2='How Aromatherapy can impact NICU Babie' img={img6} name='Morning Star' />
              </CardHolder>
             </Wrapper>
         </Container>

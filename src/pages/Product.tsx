@@ -9,6 +9,8 @@ import img5 from "../assets/pic4.jpeg"
 import img6 from "../assets/pic5.jpeg"
 import img7 from "../assets/pic6.jpeg"
 import img8 from "../assets/pic7.jpeg"
+import img9 from "../assets/pic9.jpeg"
+import img10 from "../assets/pic10.jpeg"
 // import img9 from "../assets/pic8.jpeg"
 import GlobalButton from '../components/reUse/GlobalButton'
 
@@ -26,23 +28,25 @@ const Product = () => {
                 </Sub>
                 </Word>
                 <CardHolder>
-                   <ProductCard image={img} div='$39.99' dn='none' title='Stuffed Blue Shark'/>
-                    <ProductCard image={img2} div='$39.99' dn='' title="Denim JumpSuit"/>
-                    <ProductCard image={img3} div='$39.99' dn='' title='Stuffed Blue Shark'/>
-                    <ProductCard image={img4} div='$39.99' dn='none' title='Stuffed Blue Shark'/>
-                   <ProductCard image={img5} div='$39.99' dn='' title='Stuffed Blue Shark'/>
-                    <ProductCard image={img6} div='$39.99' dn='none' title='Stuffed Blue Shark'/>
-                   <ProductCard image={img7} div='$39.99' dn='' title='Stuffed Blue Shark'/>
-                    <ProductCard image={img8} div='$39.99' dn='none' title='Super Star Knit Hat'/>
+                   <ProductCard image={img} div='$39.99' dn='none' title='Stuffed Blue Shark' hoverImage={img3}/>
+                    <ProductCard image={img2} div='$39.99' dn='' title="Denim JumpSuit" hoverImage={img4}/>
+                    <ProductCard image={img4} div='$39.99' dn='' title='Stuffed Blue Shark' hoverImage={img9}/>
+                    <ProductCard image={img6} div='$39.99' dn='none' title='Stuffed Blue Shark' hoverImage={img10}/>
+                   <ProductCard image={img5} div='$39.99' dn='' title='Stuffed Blue Shark' hoverImage={img2}/>
+                    <ProductCard image={img6} div='$39.99' dn='none' title='Stuffed Blue Shark' hoverImage={img7}/>
+                   <ProductCard image={img7} div='$39.99' dn='' title='Stuffed Blue Shark' hoverImage={img8}/>
+                    <ProductCard image={img8} div='$39.99' dn='none' title='Super Star Knit Hat' hoverImage={img2}/>
                 </CardHolder>
-                <GlobalButton width='150px' title='Shop All Products' bcc='#57C1DB' hvbcc='#F59495' subwidth='140px'/>
+                <GlobalButton width='150px' title='Shop All Products' bcc='#57C1DB' hvbcc='#F59495' subwidth='140px' hvcl='#57C1DB'/>
             </Wrapper>
+       
         </Container>
     </div>
   )
 }
 
 export default Product
+
 const CardHolder = styled.div`
 display: flex;
 flex-wrap: wrap;

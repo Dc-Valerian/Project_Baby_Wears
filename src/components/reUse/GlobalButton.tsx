@@ -6,14 +6,15 @@ interface iButton {
     hvbcc:string;
     width:string;
     subwidth:string
+    hvcl:string
 }
 
 const GlobalButton:React.FC<iButton> = ({
-    title,bcc,hvbcc,width,subwidth
+    title,bcc,hvbcc,width,subwidth,hvcl
 }) => {
   return (
     <div>
-        <Container width={width} bcc={bcc} hvbcc={hvbcc}>
+        <Container width={width} bcc={bcc} hvbcc={hvbcc} hvcl={hvcl}>
             <Wrapper subwidth={subwidth}>
                {title}
             </Wrapper>
@@ -39,7 +40,7 @@ font-weight: 700;
 text-decoration: none solid rgb(255,255,255);
 `
 
-const Container = styled.div<{width:string; bcc:string; hvbcc:string}>`
+const Container = styled.div<{width:string; bcc:string; hvbcc:string; hvcl:string}>`
 /* padding: 1px; */
 background-color: ${(props)=>props.bcc};
 width: ${(props)=>props.width};
@@ -54,7 +55,9 @@ transition: all 350ms;
 :hover{
     cursor: pointer;
     background-color: ${(props)=>props.hvbcc};
-    transform: translate(0,-5px);
+    /* transform: translate(0,-5px); */
+      box-shadow: 4px 4px 0 ${(props)=>props.hvcl};
+    transform: translate(-4px, -4px);
 }
 `
 
